@@ -1,0 +1,8 @@
+
+// Furniture er structure
+#define COL_TABLE_TOP    0.55f, 0.35f, 0.14f          // mjhari oak
+#define COL_TABLE_DARK   0.38f, 0.22f, 0.07f          // gaaroo oak legs
+#define COL_TABLE_SHINE  0.65f, 0.45f, 0.22f          // highlight kora hocche table er upor 
+#define COL_CHAIR_SEAT   0.22f, 0.28f, 0.40f          // steel blue colorer seat
+#define COL_CHAIR_FRAME  0.18f, 0.18f, 0.22f          // dark metal frame
+#define COL_CHAIR_PAD    0.28f, 0.36f, 0.52f          // seat cushion k highlight er jonno
