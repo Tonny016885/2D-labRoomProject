@@ -1,0 +1,5 @@
+// Room er structure
+#define COL_WALL_BG      0.18f, 0.20f, 0.26f          // dark blue-gray deyaal
+#define COL_FLOOR        0.78f, 0.68f, 0.54f          // halkaa badami color er floor
+#define COL_CEILING      0.22f, 0.24f, 0.30f          // halkaa color er ceiing
+#define COL_FLOOR_LINE   0.65f, 0.56f, 0.42f          // floor er tile lines
