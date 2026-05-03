@@ -1,0 +1,13 @@
+// Door & Window
+#define COL_DOOR         0.50f, 0.30f, 0.10f          // walnut door
+#define COL_DOOR_PANEL   0.44f, 0.26f, 0.08f          // recessed panel
+#define COL_DOORKNOB     0.85f, 0.72f, 0.20f          // brass knob
+#define COL_WIN_FRAME    0.42f, 0.26f, 0.10f          // window frame wood
+#define COL_WIN_GLASS    0.55f, 0.80f, 0.92f          // glass sky blue
+#define COL_WIN_SHINE    0.80f, 0.95f, 1.00f          // glass reflection
+
+
+
+// Lighting / Ceiling lamp
+#define COL_LAMP_BASE    0.70f, 0.70f, 0.72f          // aluminum lamp
+#define COL_LAMP_GLOW    0.99f, 0.96f, 0.80f          // warm light
