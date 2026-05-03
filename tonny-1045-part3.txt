@@ -1,0 +1,6 @@
+
+// Blackboard er vertices 
+#define COL_BOARD_FRAME  0.35f, 0.20f, 0.08f          //garo mehegoni rong
+#define COL_BOARD        0.09f, 0.28f, 0.15f          // garo green board
+#define COL_BOARD_TRAY   0.28f, 0.16f, 0.06f          // chalk rakhar tray
+#define COL_CHALK        0.95f, 0.95f, 0.92f          // chalk er shada daag er jonno
