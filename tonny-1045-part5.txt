@@ -1,0 +1,7 @@
+// PC ba monitor er jonno
+#define COL_MONITOR_BODY 0.14f, 0.14f, 0.18f          // near-black plastic rakhchi
+#define COL_MONITOR_EDGE 0.22f, 0.22f, 0.28f          // bezel kinaraa
+#define COL_SCREEN_OFF   0.06f, 0.08f, 0.12f          // screen off obosthay rakha hoise
+#define COL_SCREEN_ON    0.10f, 0.48f, 0.82f          // screen glow blue
+#define COL_SCREEN_GLOW  0.35f, 0.72f, 1.00f          // screen highlight kora hoise ekhane
+#define COL_STAND        0.20f, 0.20f, 0.24f          // monitor stand er jonno
