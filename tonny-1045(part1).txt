@@ -1,0 +1,9 @@
+//fragment shadder e uniform color disi jekhane ami baire theke color pathacchi shadder e & each shape draw korar age alada color send korte parbo
+const char* fragmentShaderSource =
+"#version 330 core\n"
+"out vec4 FragColor;\n"
+"uniform vec4 uColor;\n"          // agey eikhane vec3 use korchi ekhon, vec4 (R,G,B,A) eikhe A mane hocche transpericy
+"void main()\n"
+"{\n"
+"   FragColor = uColor;\n"
+"}\n\0";
