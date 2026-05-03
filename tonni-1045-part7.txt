@@ -1,0 +1,49 @@
+
+// Teacher zone
+#define COL_TEACHER_DESK 0.48f, 0.28f, 0.10f          // darker wood
+#define COL_PODIUM       0.40f, 0.24f, 0.08f          // podium
+int main()
+{
+    //eikhane glfw initialize kora hose ager 2d er house code er motoei part er moddhe change kora hoy nai
+    glfwInit();
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+#ifdef __APPLE__
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+#endif
+
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT,
+        "  2D Computer Lab  |  Sumiya Akter  |  ID: 41230201045", NULL, NULL);
+    if (!window) { glfwTerminate(); return -1; }
+    glfwMakeContextCurrent(window);
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) return -1;
+
+ //shadder comple kore link kora hoise agr 2d house er code er motoi eitte kono chage kor ni 
+    unsigned int vs = glCreateShader(GL_VERTEX_SHADER);
+    glShaderSource(vs, 1, &vertexShaderSource, NULL);
+    glCompileShader(vs);
+
+    unsigned int fs = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(fs, 1, &fragmentShaderSource, NULL);
+    glCompileShader(fs);
+
+    unsigned int sp = glCreateProgram();
+    glAttachShader(sp, vs);
+    glAttachShader(sp, fs);
+    glLinkProgram(sp);
+    glDeleteShader(vs);
+    glDeleteShader(fs);
+
+    //eikhane bufferr change korsi karon lab room e approximate 150+ shape draw korsi tai bigger buffer lagbe eijonno 2048 t nisi
+    unsigned int VAO, VBO;
+    glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &VBO);
+    glBindVertexArray(VAO);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, 2048 * sizeof(float), NULL, GL_DYNAMIC_DRAW);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+    glBindVertexArray(0);
